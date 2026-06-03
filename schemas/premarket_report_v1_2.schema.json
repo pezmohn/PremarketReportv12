@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pezmohn/PremarketReportv12/schemas/premarket_report_v1_2.schema.json",
+  "title": "Premarket Report V1.2 Structured Output",
+  "type": "object",
+  "required": [
+    "ok",
+    "candidate_count",
+    "message",
+    "candidates",
+    "claims",
+    "direction_policy",
+    "trigger_policy",
+    "entry_policy"
+  ],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "error": { "type": ["string", "null"] },
+    "has_fetch_errors": { "type": "boolean" },
+    "has_stale_flags": { "type": "boolean" },
+    "candidate_count": { "type": "integer", "minimum": 0 },
+    "run_started_at": { "type": "string" },
+    "run_finished_at": { "type": "string" },
+    "message": { "type": "string" },
+    "report_template": { "const": "premarket_v1_2_a_watchlist_avoid" },
+    "direction_policy": { "const": "gapfade" },
+    "trigger_policy": { "const": "fib" },
+    "entry_policy": { "const": "close_through" },
+    "candidates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/candidate" }
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/claim" }
+    },
+    "gex_overlay": {
+      "type": ["object", "null"],
+      "additionalProperties": { "$ref": "#/$defs/gex" }
+    }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": [
+        "ticker",
+        "prev_close",
+        "pm_price",
+        "pm_chg_pct",
+        "pm_vol",
+        "pm_high",
+        "pm_low",
+        "rel_vol",
+        "market_cap_b",
+        "score"
+      ],
+      "properties": {
+        "ticker": { "type": "string" },
+        "prev_close": { "type": "number" },
+        "prev_high": { "type": "number" },
+        "prev_low": { "type": "number" },
+        "pm_price": { "type": "number" },
+        "pm_chg_pct": { "type": "number" },
+        "pm_vol": { "type": "integer" },
+        "pm_high": { "type": "number" },
+        "pm_low": { "type": "number" },
+        "rel_vol": { "type": "number" },
+        "market_cap_b": { "type": "number" },
+        "pm_range_pct": { "type": "number" },
+        "narrow_pm": { "type": "boolean" },
+        "range_position": { "type": "number" },
+        "range_bias": { "enum": ["long", "short", "neutral"] },
+        "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "gap_up": { "type": "boolean" },
+        "gapfade1": { "type": ["object", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "ticker",
+        "pm_price",
+        "scanner_score",
+        "pm_change_pct",
+        "expected_side",
+        "tradeability_grade",
+        "tradeability_read",
+        "trigger_price",
+        "trigger_name",
+        "entry_policy",
+        "setup_type",
+        "warnings"
+      ],
+      "properties": {
+        "ticker": { "type": "string" },
+        "pm_price": { "type": "number" },
+        "scanner_score": { "type": "integer" },
+        "pm_change_pct": { "type": "number" },
+        "expected_side": { "enum": ["long", "short"] },
+        "tradeability_grade": { "enum": ["A", "B+", "B", "B-", "C"] },
+        "tradeability_read": { "type": "string" },
+        "trigger_price": { "type": ["number", "null"] },
+        "trigger_name": { "type": ["string", "null"] },
+        "entry_policy": { "const": "close_through" },
+        "setup_type": { "type": "string" },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "gex": {
+      "type": "object",
+      "properties": {
+        "flip": { "type": ["number", "null"] },
+        "call_wall": { "type": ["number", "null"] },
+        "put_wall": { "type": ["number", "null"] },
+        "state_label": { "type": ["string", "null"] },
+        "bias": { "type": ["string", "null"] },
+        "index_regime_summary": { "type": ["string", "null"] },
+        "gamma_box": { "type": ["string", "null"] },
+        "trigger": { "type": ["string", "null"] },
+        "decision_summary": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}
