@@ -1,0 +1,164 @@
+report:
+  name: Premarket Report
+  version: "1.2"
+  engine: Gapfade Direction + Fib Trigger + Close-through Entry
+  output_format: telegram_markdown
+  schedule:
+    intended_market_phase: premarket_final
+    intended_window_et:
+      start: "09:00"
+      end: "09:30"
+    typical_run_time_et: "09:25"
+  verification:
+    max_age_seconds: 300
+    send_only_if_clean: true
+    reject_if:
+      - scanner_exit_code_nonzero
+      - fetch_errors
+      - stale_or_unreliable_flags
+      - empty_content
+      - wrong_market_phase
+
+data_sources:
+  polygon_snapshot:
+    endpoint: /v2/snapshot/locale/us/markets/stocks/tickers
+    auth: POLYGON_API_KEY
+    fields:
+      ticker: ticker
+      price: min.c
+      snapshot_volume: min.av
+      snapshot_high: min.h
+      snapshot_low: min.l
+      previous_close: prevDay.c
+      previous_high: prevDay.h
+      previous_low: prevDay.l
+      previous_volume: prevDay.v
+  polygon_reference:
+    endpoint: /v3/reference/tickers/{ticker}
+    auth: POLYGON_API_KEY
+    fields:
+      market_cap: results.market_cap
+  barchart_gamma_exposure:
+    url: https://www.barchart.com/stocks/quotes/{ticker}/gamma-exposure
+    auth: none_in_definition
+    parsed_fields:
+      - spot
+      - gamma_flip
+      - call_wall
+      - put_wall
+      - iv_rank
+      - near_support_levels
+      - near_resistance_levels
+      - signed_gex_by_strike
+  local_gex_history:
+    path: state/barchart_levels.sqlite
+    required_for:
+      - index_flip_regime_summary
+    index_tickers:
+      - SPY
+      - QQQ
+      - SMH
+      - IWM
+
+candidate_filters:
+  min_price: 10.0
+  min_abs_premarket_change_pct: 3.0
+  min_market_cap: 2000000000
+  min_snapshot_volume: 500000
+  max_results: 10
+
+scoring:
+  base_score: 50
+  gap_component:
+    formula: min(25, abs(pm_change_pct) * 3)
+  volume_bonus:
+    if_snapshot_volume_gte: 1000000
+    add: 10
+  range_bias_bonus:
+    if_range_bias_not: neutral
+    add: 10
+  cap: 100
+
+range_model:
+  range_high_field: min.h
+  range_low_field: min.l
+  warning: Original implementation may use current snapshot minute high/low, not full premarket session high/low.
+  levels:
+    PM_High: range_high
+    PM_Low: range_low
+    PDH: previous_high
+    PDL: previous_low
+    PDC: previous_close
+    Ext_-27.2: range_low - 0.272 * range
+    Ext_127.2: range_high + 0.272 * range
+    Fib_78.6: range_low + 0.786 * range
+    Fib_50.0: range_low + 0.500 * range
+    Fib_23.6: range_low + 0.236 * range
+  range_position:
+    formula: (price - range_low) / max(range_high - range_low, 0.01) * 100
+    long_if_gte: 70
+    short_if_lte: 30
+    else: neutral
+  narrow_range_pct_threshold: 0.5
+
+direction_policy:
+  default:
+    gap_up: long
+    gap_down: short
+  gapfade1_override:
+    eligible_when:
+      pm_change_pct_gte: 8.0
+      relative_volume_lt: 1.5
+    direction: short
+    setup_label: GapFade Short
+
+trigger_policy:
+  type: fib
+  long_preference_order:
+    - Fib_78.6
+    - Fib_50.0
+    - Fib_23.6
+  long_condition: level >= price * 0.995
+  long_fallback: PM_High
+  short_preference_order:
+    - Fib_23.6
+    - Fib_50.0
+    - Fib_78.6
+  short_condition: level <= price * 1.005
+  short_fallback: PM_Low
+
+entry_policy:
+  name: close_through
+  rule: First 1-minute candle close through trigger.
+  touch_only_entry: false
+
+tradeability_grades:
+  score_adjustments:
+    gapfade1: 8
+    narrow_range: -15
+    relative_volume_lt_0_25: -5
+  thresholds:
+    A: 82
+    B+: 74
+    B: 64
+    C: 0
+
+ranking:
+  a_setups:
+    include_grades:
+      - A
+      - B+
+    requires_trigger: true
+    limit: 4
+  watchlist:
+    include_grades:
+      - B
+    limit: 4
+  avoid:
+    include_remaining: true
+    limit: 4
+
+risk_text:
+  entry_rule: Trigger muss per 1m-Close gebrochen werden; kein Touch-Only Entry
+  exit: Stop 0.8% | Trail BE@1R, 0.5R step | EOD close
+  daily_limits: Max 4 trades/day | $100 risk each | Stop nach -$400
