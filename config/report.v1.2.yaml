@@ -66,6 +66,13 @@ candidate_filters:
   min_market_cap: 2000000000
   min_snapshot_volume: 500000
   max_results: 10
+  no_hard_filter_for:
+    - spread
+    - float
+    - options_liquidity
+    - gex_availability
+    - narrow_pm
+    - low_relative_volume
 
 scoring:
   base_score: 50
@@ -111,6 +118,24 @@ direction_policy:
       relative_volume_lt: 1.5
     direction: short
     setup_label: GapFade Short
+    diagnostic_score:
+      gap_adr_between_1_0_and_3_0_add: 25
+      gap_adr_between_0_5_and_1_0_add: 10
+      gap_adr_gt_5_0_add: -10
+      pm_fading_add: 20
+      pm_pullback_gt_5_pct_add: 15
+      pm_volume_gte_1000000_add: 20
+      pm_volume_gte_500000_add: 10
+      thursday_add: 15
+      tuesday_or_wednesday_add: 5
+      rvol_lt_0_7_add: 15
+      rvol_lt_1_0_add: 10
+      gap_between_8_and_15_pct_add: 10
+      gap_gt_20_pct_add: -5
+      confidence:
+        HIGH: 70
+        MEDIUM: 45
+        LOW: 0
 
 trigger_policy:
   type: fib
@@ -144,6 +169,10 @@ tradeability_grades:
     C: 0
 
 ranking:
+  sort_key:
+    - grade_rank_desc
+    - scanner_score_desc
+    - warning_count_asc
   a_setups:
     include_grades:
       - A
@@ -157,6 +186,36 @@ ranking:
   avoid:
     include_remaining: true
     limit: 4
+
+warnings:
+  narrow_pm:
+    formula: (snapshot_high - snapshot_low) / snapshot_low * 100
+    threshold_lt_pct: 0.5
+  low_rel_vol:
+    field: relative_volume
+    threshold_lt: 0.25
+  gamma_box:
+    source: barchart_gex_overlay.gamma_box
+    condition: present
+  low_tradeability:
+    condition: avoid_candidate_with_grade_C
+  weaker_than_top_setups:
+    condition: avoid_candidate_without_specific_warning
+
+market_read:
+  index_tickers:
+    - SPY
+    - QQQ
+    - SMH
+    - IWM
+  baseline_phase: open
+  per_index_rule:
+    above_flip: spot_price > gamma_flip
+    below_flip: spot_price <= gamma_flip
+  aggregation:
+    bullish_if_above_count_gte: 3
+    bearish_if_below_count_gte: 3
+    otherwise: mixed
 
 risk_text:
   entry_rule: Trigger muss per 1m-Close gebrochen werden; kein Touch-Only Entry

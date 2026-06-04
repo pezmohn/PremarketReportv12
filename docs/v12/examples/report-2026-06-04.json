@@ -1,0 +1,1181 @@
+{
+  "ok": true,
+  "error": null,
+  "has_fetch_errors": false,
+  "has_stale_flags": false,
+  "candidate_count": 10,
+  "run_started_at": "2026-06-04T13:25:09.409185+00:00",
+  "run_finished_at": "2026-06-04T13:25:38.908400+00:00",
+  "message": "🔍 **Premarket Report V1.2** (13:25 UTC)\nEngine: **Gapfade Direction + Fib Trigger + Close-through Entry**\n📊 10 Kandidaten | EOD-validiert | Entry: erste 1m-Close durch Trigger\n🧠 Market Read: Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).\n\n**A-Setups / Tradeable nur nach Trigger**\n1. 🔴 **SNDX — B+ Short Continuation**\n   PM -7.0% @ $17.06 | Score 91/100 | Vol 1.2M / RV 6.3x | Cap $2.1B\n   Bias: **SHORT** | Trigger: **Fib_23.6 17.06** | Entry: Close-through\n   GEX: Flip 19.58 | CallW 23.00 | PutW 18.00 | Box 16.00-17.00 | comfortably_below_flip\n   Warnung: narrow_pm, gamma_box\n\n2. 🔴 **MRVL — B+ Short Continuation**\n   PM -5.2% @ $285.87 | Score 86/100 | Vol 4.1M / RV 0.2x | Cap $68.2B\n   Bias: **SHORT** | Trigger: **Fib_78.6 285.98** | Entry: Close-through\n   GEX: Flip 183.30 | CallW 320.00 | PutW 270.00 | Box 285.00-290.00 | comfortably_above_flip\n   Warnung: low_rel_vol, gamma_box\n\n**Watchlist / Nur bei sauberem Trigger**\n- **SMCI** -7.3% @ $43.95 | B | SHORT | Trigger Fib_23.6 43.98 | GEX: Flip 33.78 | CallW 50.00 | PutW 45.00 | Box 44.00-44.50 | comfortably_above_flip | Warnung: narrow_pm, low_rel_vol, gamma_box\n- **GLW** -5.9% @ $188.92 | B | SHORT | Trigger Fib_23.6 188.92 | GEX: Flip 179.85 | CallW 200.00 | PutW 180.00 | Box 190.00-192.50 | comfortably_above_flip | Warnung: narrow_pm, gamma_box\n- **IREN** -5.9% @ $61.61 | B | SHORT | Trigger Fib_23.6 61.60 | GEX: Flip 60.08 | CallW 70.00 | PutW 60.00 | Box 61.00-62.00 | comfortably_above_flip | Warnung: narrow_pm, low_rel_vol, gamma_box\n- **NVTS** -5.8% @ $29.06 | B | SHORT | Trigger Fib_78.6 29.05 | GEX: Flip 22.91 | CallW 30.00 | PutW 24.00 | Box 29.00-29.50 | comfortably_above_flip | Warnung: narrow_pm, low_rel_vol, gamma_box\n\n**Avoid / Kein First-Choice-Trade**\n- **AVGO** -14.9% @ $407.82 | B | narrow_pm, gamma_box | GEX: Flip 400.71 | CallW 500.00 | PutW 400.00 | Box 405.00-407.50 | comfortably_above_flip\n- **SKM** -11.2% @ $39.99 | B | narrow_pm, gamma_box | GEX: Flip 32.83 | CallW 45.00 | PutW 35.00 | Box 35.00-40.00 | comfortably_above_flip\n- **RGTI** -3.6% @ $23.22 | C | narrow_pm, low_rel_vol, gamma_box, low_tradeability | GEX: Flip 21.69 | CallW 30.00 | PutW 25.00 | Box 23.00-23.50 | comfortably_above_flip\n- **IONQ** -3.6% @ $65.79 | C | narrow_pm, low_rel_vol, gamma_box, low_tradeability | GEX: Flip 57.99 | CallW 60.00 | PutW 55.00 | Box 65.00-66.00 | comfortably_above_flip\n\n**Alle Scanner-Kandidaten / Audit Trail**\n- **SMCI** | B | SHORT | Score 92 | Trigger Fib_23.6 43.98\n- **SNDX** | B+ | SHORT | Score 91 | Trigger Fib_23.6 17.06\n- **IREN** | B | SHORT | Score 88 | Trigger Fib_23.6 61.60\n- **GLW** | B | SHORT | Score 88 | Trigger Fib_23.6 188.92\n- **NVTS** | B | SHORT | Score 87 | Trigger Fib_78.6 29.05\n- **MRVL** | B+ | SHORT | Score 86 | Trigger Fib_78.6 285.98\n- **AVGO** | B | SHORT | Score 85 | Trigger Fib_50.0 407.81\n- **SKM** | B | SHORT | Score 85 | Trigger Fib_23.6 39.99\n- **RGTI** | C | SHORT | Score 81 | Trigger Fib_23.6 23.23\n- **IONQ** | C | SHORT | Score 81 | Trigger Fib_23.6 65.80\n────────────────────────────────────────\n\n📋 **Entry-Regel:** Trigger muss per 1m-Close gebrochen werden; kein Touch-Only Entry\n🛡 **Exit:** Stop 0.8% | Trail BE@1R, 0.5R step | EOD close\n⚠️ Max 4 trades/day | $100 risk each | Stop nach -$400",
+  "candidates": [
+    {
+      "ticker": "SMCI",
+      "prev_close": 47.42,
+      "prev_high": 50.02,
+      "prev_low": 45.66,
+      "pm_price": 43.95,
+      "pm_chg_pct": -7.32,
+      "pm_vol": 1269453,
+      "pm_high": 44.08,
+      "pm_low": 43.95,
+      "rel_vol": 0.2,
+      "market_cap_b": 17.8,
+      "pm_range_pct": 0.3,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 44.08,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 43.95,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 50.02,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 45.66,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 47.42,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 43.914640000000006,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 44.115359999999995,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 44.05218,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 44.015,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 43.98068,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 92,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "SNDX",
+      "prev_close": 18.34,
+      "prev_high": 18.58,
+      "prev_low": 18.1,
+      "pm_price": 17.06,
+      "pm_chg_pct": -6.98,
+      "pm_vol": 1218024,
+      "pm_high": 17.06,
+      "pm_low": 17.06,
+      "rel_vol": 6.3,
+      "market_cap_b": 2.1,
+      "pm_range_pct": 0.0,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 17.06,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 17.06,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 18.58,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 18.1,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 18.34,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 17.05728,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 17.06272,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 17.06786,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 17.064999999999998,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 17.062359999999998,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 91,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "IREN",
+      "prev_close": 65.48,
+      "prev_high": 70.7066,
+      "prev_low": 64.46,
+      "pm_price": 61.61,
+      "pm_chg_pct": -5.91,
+      "pm_vol": 2038900,
+      "pm_high": 61.74,
+      "pm_low": 61.56,
+      "rel_vol": 0.2,
+      "market_cap_b": 14.0,
+      "pm_range_pct": 0.29,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 61.74,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 61.56,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 70.7066,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 64.46,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 65.48,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 61.51104,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 61.78896,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 61.701480000000004,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 61.650000000000006,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 61.60248,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 27.8,
+      "range_bias": "short",
+      "score": 88,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "GLW",
+      "prev_close": 200.76,
+      "prev_high": 208.57,
+      "prev_low": 195.7,
+      "pm_price": 188.92,
+      "pm_chg_pct": -5.9,
+      "pm_vol": 1101628,
+      "pm_high": 188.92,
+      "pm_low": 188.92,
+      "rel_vol": 0.6,
+      "market_cap_b": 113.3,
+      "pm_range_pct": 0.0,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 188.92,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 188.92,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 208.57,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 195.7,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 200.76,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 188.91727999999998,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 188.92272,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 188.92785999999998,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 188.92499999999998,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 188.92236,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 88,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "NVTS",
+      "prev_close": 30.84,
+      "prev_high": 34.17,
+      "prev_low": 29.7,
+      "pm_price": 29.06,
+      "pm_chg_pct": -5.77,
+      "pm_vol": 1266712,
+      "pm_high": 29.07,
+      "pm_low": 28.9712,
+      "rel_vol": 0.1,
+      "market_cap_b": 2.3,
+      "pm_range_pct": 0.34,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 29.07,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 28.9712,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 34.17,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 29.7,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 30.84,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 28.944326399999998,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 29.096873600000002,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 29.0488568,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 29.0206,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 28.9945168,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 89.9,
+      "range_bias": "long",
+      "score": 87,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "MRVL",
+      "prev_close": 301.65,
+      "prev_high": 324.2,
+      "prev_low": 294.0101,
+      "pm_price": 285.87,
+      "pm_chg_pct": -5.23,
+      "pm_vol": 4073013,
+      "pm_high": 286.3493,
+      "pm_low": 284.64,
+      "rel_vol": 0.2,
+      "market_cap_b": 68.2,
+      "pm_range_pct": 0.6,
+      "narrow_pm": false,
+      "levels": {
+        "PM_High": {
+          "price": 286.3493,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 284.64,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 324.2,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 294.0101,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 301.65,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 284.1750704,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 286.81422960000003,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 285.98350980000004,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 285.49465,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 285.0433948,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 72.0,
+      "range_bias": "long",
+      "score": 86,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "AVGO",
+      "prev_close": 479.23,
+      "prev_high": 495,
+      "prev_low": 472.64,
+      "pm_price": 407.8166,
+      "pm_chg_pct": -14.9,
+      "pm_vol": 5377425,
+      "pm_high": 408,
+      "pm_low": 407.6166,
+      "rel_vol": 0.7,
+      "market_cap_b": 1581.3,
+      "pm_range_pct": 0.09,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 408,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 407.6166,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 495,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 472.64,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 479.23,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 407.5123152,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 408.1042848,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 407.9179524,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 407.80830000000003,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 407.7070824,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 52.2,
+      "range_bias": "neutral",
+      "score": 85,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "SKM",
+      "prev_close": 45.04,
+      "prev_high": 45.83,
+      "prev_low": 44.79,
+      "pm_price": 39.99,
+      "pm_chg_pct": -11.21,
+      "pm_vol": 963387,
+      "pm_high": 39.99,
+      "pm_low": 39.99,
+      "rel_vol": 2.7,
+      "market_cap_b": 14.3,
+      "pm_range_pct": 0.0,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 39.99,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 39.99,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 45.83,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 44.79,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 45.04,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 39.987280000000005,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 39.99272,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 39.99786,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 39.995000000000005,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 39.992360000000005,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 85,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "RGTI",
+      "prev_close": 24.095,
+      "prev_high": 28.06,
+      "prev_low": 23.78,
+      "pm_price": 23.22,
+      "pm_chg_pct": -3.63,
+      "pm_vol": 1526014,
+      "pm_high": 23.25,
+      "pm_low": 23.22,
+      "rel_vol": 0.1,
+      "market_cap_b": 5.3,
+      "pm_range_pct": 0.13,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 23.25,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 23.22,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 28.06,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 23.78,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 24.095,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 23.21184,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 23.25816,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 23.24358,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 23.235,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 23.22708,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 81,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "IONQ",
+      "prev_close": 68.23,
+      "prev_high": 73.65,
+      "prev_low": 67.51,
+      "pm_price": 65.7912,
+      "pm_chg_pct": -3.57,
+      "pm_vol": 1122219,
+      "pm_high": 65.83,
+      "pm_low": 65.7912,
+      "rel_vol": 0.2,
+      "market_cap_b": 12.0,
+      "pm_range_pct": 0.06,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 65.83,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 65.7912,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 73.65,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 67.51,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 68.23,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 65.78064640000001,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 65.84055359999999,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 65.8216968,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 65.8106,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 65.8003568,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 81,
+      "gap_up": false,
+      "gapfade1": null
+    }
+  ],
+  "claims": [
+    {
+      "ticker": "SMCI",
+      "pm_price": 43.95,
+      "scanner_score": 92,
+      "pm_change_pct": -7.32,
+      "expected_side": "short",
+      "tradeability_grade": "B",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 43.9807,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "low_rel_vol",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "SNDX",
+      "pm_price": 17.06,
+      "scanner_score": 91,
+      "pm_change_pct": -6.98,
+      "expected_side": "short",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 17.0624,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "pm_price": 61.61,
+      "scanner_score": 88,
+      "pm_change_pct": -5.91,
+      "expected_side": "short",
+      "tradeability_grade": "B",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 61.6025,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "low_rel_vol",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "pm_price": 188.92,
+      "scanner_score": 88,
+      "pm_change_pct": -5.9,
+      "expected_side": "short",
+      "tradeability_grade": "B",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 188.9224,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "NVTS",
+      "pm_price": 29.06,
+      "scanner_score": 87,
+      "pm_change_pct": -5.77,
+      "expected_side": "short",
+      "tradeability_grade": "B",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 29.0489,
+      "trigger_name": "Fib_78.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "low_rel_vol",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "pm_price": 285.87,
+      "scanner_score": 86,
+      "pm_change_pct": -5.23,
+      "expected_side": "short",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 285.9835,
+      "trigger_name": "Fib_78.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "low_rel_vol",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "pm_price": 407.8166,
+      "scanner_score": 85,
+      "pm_change_pct": -14.9,
+      "expected_side": "short",
+      "tradeability_grade": "B",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 407.8083,
+      "trigger_name": "Fib_50.0",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "SKM",
+      "pm_price": 39.99,
+      "scanner_score": 85,
+      "pm_change_pct": -11.21,
+      "expected_side": "short",
+      "tradeability_grade": "B",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 39.9924,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "RGTI",
+      "pm_price": 23.22,
+      "scanner_score": 81,
+      "pm_change_pct": -3.63,
+      "expected_side": "short",
+      "tradeability_grade": "C",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 23.2271,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "low_rel_vol",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "pm_price": 65.7912,
+      "scanner_score": 81,
+      "pm_change_pct": -3.57,
+      "expected_side": "short",
+      "tradeability_grade": "C",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 65.8004,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "low_rel_vol",
+        "gamma_box"
+      ]
+    }
+  ],
+  "report_template": "premarket_v1_2_a_watchlist_avoid",
+  "direction_policy": "gapfade",
+  "trigger_policy": "fib",
+  "entry_policy": "close_through",
+  "gex_overlay": {
+    "SMCI": {
+      "flip": 33.78431746757748,
+      "call_wall": 50.0,
+      "put_wall": 45.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "44.00-44.50",
+      "trigger": "Need clean acceptance above 46.50 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 44.00-44.50; wait for clearance above 46.50."
+    },
+    "SNDX": {
+      "flip": 19.583825662094572,
+      "call_wall": 23.0,
+      "put_wall": 18.0,
+      "state_label": "comfortably_below_flip",
+      "bias": "neutral",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "16.00-17.00",
+      "trigger": "Need clean acceptance above 17.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 16.00-17.00; wait for clearance above 17.00."
+    },
+    "IREN": {
+      "flip": 60.084368238958724,
+      "call_wall": 70.0,
+      "put_wall": 60.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "61.00-62.00",
+      "trigger": "Need clean acceptance above 65.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 61.00-62.00; wait for clearance above 65.00."
+    },
+    "GLW": {
+      "flip": 179.85343128292976,
+      "call_wall": 200.0,
+      "put_wall": 180.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "190.00-192.50",
+      "trigger": "Need clean acceptance above 200.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 190.00-192.50; wait for clearance above 200.00."
+    },
+    "NVTS": {
+      "flip": 22.907165137546457,
+      "call_wall": 30.0,
+      "put_wall": 24.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "29.00-29.50",
+      "trigger": "Need clean acceptance above 30.50 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 29.00-29.50; wait for clearance above 30.50."
+    },
+    "MRVL": {
+      "flip": 183.30415996497476,
+      "call_wall": 320.0,
+      "put_wall": 270.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "285.00-290.00",
+      "trigger": "Need clean acceptance above 300.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 285.00-290.00; wait for clearance above 300.00."
+    },
+    "AVGO": {
+      "flip": 400.70724094289017,
+      "call_wall": 500.0,
+      "put_wall": 400.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "405.00-407.50",
+      "trigger": "Need clean acceptance above 430.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 405.00-407.50; wait for clearance above 430.00."
+    },
+    "SKM": {
+      "flip": 32.82986051762787,
+      "call_wall": 45.0,
+      "put_wall": 35.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "35.00-40.00",
+      "trigger": "Need clean acceptance above 40.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 35.00-40.00; wait for clearance above 40.00."
+    },
+    "RGTI": {
+      "flip": 21.691647371839917,
+      "call_wall": 30.0,
+      "put_wall": 25.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "23.00-23.50",
+      "trigger": "Need clean acceptance above 24.50 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 23.00-23.50; wait for clearance above 24.50."
+    },
+    "IONQ": {
+      "flip": 57.98941976510638,
+      "call_wall": 60.0,
+      "put_wall": 55.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias bullish (SPY above flip, QQQ above flip, SMH above flip, IWM below flip).",
+      "gamma_box": "65.00-66.00",
+      "trigger": "Need clean acceptance above 69.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 65.00-66.00; wait for clearance above 69.00."
+    }
+  },
+  "evidence": {
+    "scanner_exit_code": 0,
+    "scanner_ok": true,
+    "stdout_bytes": 32674,
+    "stderr_bytes": 0
+  }
+}

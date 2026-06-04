@@ -1,0 +1,1214 @@
+{
+  "ok": true,
+  "error": null,
+  "has_fetch_errors": false,
+  "has_stale_flags": false,
+  "candidate_count": 10,
+  "run_started_at": "2026-06-01T13:25:10.800629+00:00",
+  "run_finished_at": "2026-06-01T13:25:40.885164+00:00",
+  "message": "🔍 **Premarket Report V1.2** (13:25 UTC)\nEngine: **Gapfade Direction + Fib Trigger + Close-through Entry**\n📊 10 Kandidaten | EOD-validiert | Entry: erste 1m-Close durch Trigger\n🧠 Market Read: Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).\n\n**A-Setups / Tradeable nur nach Trigger**\n1. 🟢 **IBM — A GapFade Short**\n   PM +9.3% @ $325.65 | Score 95/100 | Vol 3.5M / RV 0.8x | Cap $226.9B\n   Bias: **SHORT** | Trigger: **Fib_78.6 325.58** | Entry: Close-through\n   GEX: Flip 237.08 | CallW 300.00 | PutW 250.00 | Box 325.00-330.00 | comfortably_above_flip\n   Warnung: narrow_pm, gamma_box\n\n2. 🟢 **ARM — A GapFade Short**\n   PM +11.6% @ $394.36 | Score 95/100 | Vol 1.7M / RV 1.1x | Cap $135.1B\n   Bias: **SHORT** | Trigger: **Fib_78.6 394.07** | Entry: Close-through\n   GEX: Flip 209.64 | CallW 350.00 | PutW 312.50 | Box 392.50-395.00 | comfortably_above_flip\n   Warnung: narrow_pm, gamma_box\n\n3. 🟢 **NOW — A GapFade Short**\n   PM +8.4% @ $134.85 | Score 95/100 | Vol 4.3M / RV 0.4x | Cap $127.5B\n   Bias: **SHORT** | Trigger: **Fib_23.6 134.94** | Entry: Close-through\n   GEX: Flip 98.30 | CallW 120.00 | PutW 120.00 | Box 134.00-135.00 | comfortably_above_flip\n   Warnung: narrow_pm, gamma_box\n\n4. 🟢 **FIG — A Long Continuation**\n   PM +5.2% @ $26.83 | Score 86/100 | Vol 1.3M / RV 0.3x | Cap $12.0B\n   Bias: **LONG** | Trigger: **Fib_23.6 26.86** | Entry: Close-through\n   GEX: Flip 20.82 | CallW 25.00 | PutW 25.00 | Box 26.50-27.00 | comfortably_above_flip\n   Warnung: gamma_box\n\n**Watchlist / Nur bei sauberem Trigger**\n- **CRWV** +6.0% @ $116.05 | B | LONG | Trigger Fib_23.6 116.08 | GEX: Flip 101.28 | CallW 120.00 | PutW 100.00 | Box 115.00-116.00 | comfortably_above_flip | Warnung: narrow_pm, gamma_box\n\n**Avoid / Kein First-Choice-Trade**\n- **MGM** +11.8% @ $48.81 | B+ | narrow_pm, gamma_box | GEX: Flip 36.23 | CallW 40.00 | PutW 35.00 | Box 49.00-50.00 | comfortably_above_flip\n- **FLNC** +21.1% @ $22.86 | B+ | narrow_pm, gamma_box | GEX: Flip 18.13 | CallW 25.00 | PutW 18.00 | Box 22.00-23.00 | comfortably_above_flip\n- **RDW** -7.4% @ $22.75 | B+ | narrow_pm, gamma_box | GEX: Flip 12.56 | CallW 25.00 | PutW 20.00 | Box 22.50-23.00 | comfortably_above_flip\n- **QCOM** -7.3% @ $232.59 | B+ | narrow_pm, gamma_box | GEX: Flip 181.05 | CallW 250.00 | PutW 200.00 | Box 232.50-235.00 | comfortably_above_flip\n\n**Alle Scanner-Kandidaten / Audit Trail**\n- **MGM** | B+ | LONG | Score 95 | Trigger Fib_23.6 48.83\n- **IBM** | A | SHORT | Score 95 | Trigger Fib_78.6 325.58\n- **ARM** | A | SHORT | Score 95 | Trigger Fib_78.6 394.07\n- **NOW** | A | SHORT | Score 95 | Trigger Fib_23.6 134.94\n- **FLNC** | B+ | LONG | Score 95 | Trigger Fib_23.6 22.88\n- **RDW** | B+ | SHORT | Score 92 | Trigger Fib_23.6 22.77\n- **QCOM** | B+ | SHORT | Score 92 | Trigger Fib_23.6 232.76\n- **NBIS** | B+ | LONG | Score 91 | Trigger Fib_78.6 247.02\n- **CRWV** | B | LONG | Score 88 | Trigger Fib_23.6 116.08\n- **FIG** | A | LONG | Score 86 | Trigger Fib_23.6 26.86\n────────────────────────────────────────\n\n🔻 **GapFade1 — Gap Up Fade Candidates**\n📊 60% Win | +3.0R avg | PF 2.0+ (83k events, 5yr)\n\n🟢 **NOW** Gap +8.4% | RVOL 0.4x | Fade Score: 70/100 (HIGH)\n  Gap/ADR 1.0x ⭐ | PM near highs | PM Vol >1M ⭐ | RVOL 0.4x (very low) ⭐ | Gap 8.4% (sweetspot)\n\n🟡 **ARM** Gap +11.6% | RVOL 1.1x | Fade Score: 55/100 (MEDIUM)\n  Gap/ADR 1.8x ⭐ | PM near highs | PM Vol >1M ⭐ | RVOL 1.1x | Gap 11.6% (sweetspot)\n\n🟡 **IBM** Gap +9.3% | RVOL 0.8x | Fade Score: 50/100 (MEDIUM)\n  Gap/ADR 0.8x | PM near highs | PM Vol >1M ⭐ | RVOL 0.8x (low) | Gap 9.3% (sweetspot)\n\n📋 **GF1 Bias:** Gap-up Fades bevorzugt SHORT; Entry erst nach Close-through Trigger\n🛡 **GF1 Exit:** Stop: ORB/Trigger invalidation | Trail BE@0.5R, 0.25R step\n\n────────────────────────────────────────\n\n📋 **Entry-Regel:** Trigger muss per 1m-Close gebrochen werden; kein Touch-Only Entry\n🛡 **Exit:** Stop 0.8% | Trail BE@1R, 0.5R step | EOD close\n⚠️ Max 4 trades/day | $100 risk each | Stop nach -$400",
+  "candidates": [
+    {
+      "ticker": "MGM",
+      "prev_close": 43.67,
+      "prev_high": 44.28,
+      "prev_low": 42.72,
+      "pm_price": 48.81,
+      "pm_chg_pct": 11.77,
+      "pm_vol": 1838202,
+      "pm_high": 48.91,
+      "pm_low": 48.8,
+      "rel_vol": 1.7,
+      "market_cap_b": 9.0,
+      "pm_range_pct": 0.23,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 48.91,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 48.8,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 44.28,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 42.72,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 43.67,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 48.77008,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 48.939919999999994,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 48.88646,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 48.855,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 48.825959999999995,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 9.1,
+      "range_bias": "short",
+      "score": 95,
+      "gap_up": true,
+      "gapfade1": null
+    },
+    {
+      "ticker": "IBM",
+      "prev_close": 297.8,
+      "prev_high": 300.9999,
+      "prev_low": 273.33,
+      "pm_price": 325.65,
+      "pm_chg_pct": 9.35,
+      "pm_vol": 3489270,
+      "pm_high": 325.65,
+      "pm_low": 325.3,
+      "rel_vol": 0.8,
+      "market_cap_b": 226.9,
+      "pm_range_pct": 0.11,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 325.65,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 325.3,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 300.9999,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 273.33,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 297.8,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 325.20480000000003,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 325.74519999999995,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 325.57509999999996,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 325.475,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 325.3826,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 100.0,
+      "range_bias": "long",
+      "score": 95,
+      "gap_up": true,
+      "gapfade1": {
+        "score": 50,
+        "confidence": "MEDIUM",
+        "flags": [
+          "Gap/ADR 0.8x",
+          "PM near highs",
+          "PM Vol >1M ⭐",
+          "RVOL 0.8x (low)",
+          "Gap 9.3% (sweetspot)"
+        ],
+        "gap_adr_ratio": 0.84,
+        "rvol": 0.8,
+        "gap_pct": 9.3
+      }
+    },
+    {
+      "ticker": "ARM",
+      "prev_close": 353.29,
+      "prev_high": 356.45,
+      "prev_low": 337,
+      "pm_price": 394.36,
+      "pm_chg_pct": 11.63,
+      "pm_vol": 1745246,
+      "pm_high": 394.37,
+      "pm_low": 392.95,
+      "rel_vol": 1.1,
+      "market_cap_b": 135.1,
+      "pm_range_pct": 0.36,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 394.37,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 392.95,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 356.45,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 337,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 353.29,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 392.56376,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 394.75624,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 394.06612,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 393.65999999999997,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 393.28512,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 99.3,
+      "range_bias": "long",
+      "score": 95,
+      "gap_up": true,
+      "gapfade1": {
+        "score": 55,
+        "confidence": "MEDIUM",
+        "flags": [
+          "Gap/ADR 1.8x ⭐",
+          "PM near highs",
+          "PM Vol >1M ⭐",
+          "RVOL 1.1x",
+          "Gap 11.6% (sweetspot)"
+        ],
+        "gap_adr_ratio": 1.76,
+        "rvol": 1.1,
+        "gap_pct": 11.6
+      }
+    },
+    {
+      "ticker": "NOW",
+      "prev_close": 124.37,
+      "prev_high": 124.74,
+      "prev_low": 116.29,
+      "pm_price": 134.85,
+      "pm_chg_pct": 8.43,
+      "pm_vol": 4264519,
+      "pm_high": 135.25,
+      "pm_low": 134.85,
+      "rel_vol": 0.4,
+      "market_cap_b": 127.5,
+      "pm_range_pct": 0.3,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 135.25,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 134.85,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 124.74,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 116.29,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 124.37,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 134.7412,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 135.3588,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 135.1644,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 135.05,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 134.9444,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 95,
+      "gap_up": true,
+      "gapfade1": {
+        "score": 70,
+        "confidence": "HIGH",
+        "flags": [
+          "Gap/ADR 1.0x ⭐",
+          "PM near highs",
+          "PM Vol >1M ⭐",
+          "RVOL 0.4x (very low) ⭐",
+          "Gap 8.4% (sweetspot)"
+        ],
+        "gap_adr_ratio": 1.03,
+        "rvol": 0.4,
+        "gap_pct": 8.4
+      }
+    },
+    {
+      "ticker": "FLNC",
+      "prev_close": 18.88,
+      "prev_high": 21.205,
+      "prev_low": 18.615,
+      "pm_price": 22.86,
+      "pm_chg_pct": 21.08,
+      "pm_vol": 2718803,
+      "pm_high": 22.96,
+      "pm_low": 22.86,
+      "rel_vol": 1.6,
+      "market_cap_b": 2.3,
+      "pm_range_pct": 0.44,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 22.96,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 22.86,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 21.205,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 18.615,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 18.88,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 22.8328,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 22.9872,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 22.9386,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 22.91,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 22.8836,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 95,
+      "gap_up": true,
+      "gapfade1": null
+    },
+    {
+      "ticker": "RDW",
+      "prev_close": 24.57,
+      "prev_high": 24.79,
+      "prev_low": 21.665,
+      "pm_price": 22.75,
+      "pm_chg_pct": -7.41,
+      "pm_vol": 2709140,
+      "pm_high": 22.82,
+      "pm_low": 22.75,
+      "rel_vol": 0.3,
+      "market_cap_b": 2.0,
+      "pm_range_pct": 0.31,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 22.82,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 22.75,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 24.79,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 21.665,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 24.57,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 22.73096,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 22.83904,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 22.80502,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 22.785,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 22.76652,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 92,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "QCOM",
+      "prev_close": 251.02,
+      "prev_high": 259.92,
+      "prev_low": 247.5101,
+      "pm_price": 232.5875,
+      "pm_chg_pct": -7.34,
+      "pm_vol": 1845872,
+      "pm_high": 233.33,
+      "pm_low": 232.5875,
+      "rel_vol": 0.4,
+      "market_cap_b": 147.4,
+      "pm_range_pct": 0.32,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 233.33,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 232.5875,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 259.92,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 247.5101,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 251.02,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 232.38554,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 233.53196000000003,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 233.171105,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 232.95875,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 232.76273,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 92,
+      "gap_up": false,
+      "gapfade1": null
+    },
+    {
+      "ticker": "NBIS",
+      "prev_close": 231.09,
+      "prev_high": 233.6,
+      "prev_low": 210.4,
+      "pm_price": 247.08,
+      "pm_chg_pct": 6.92,
+      "pm_vol": 1033009,
+      "pm_high": 247.08,
+      "pm_low": 246.7795,
+      "rel_vol": 0.3,
+      "market_cap_b": 23.1,
+      "pm_range_pct": 0.12,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 247.08,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 246.7795,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 233.6,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 210.4,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 231.09,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 246.697764,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 247.16173600000002,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 247.015693,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 246.92975,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 246.85041800000002,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 100.0,
+      "range_bias": "long",
+      "score": 91,
+      "gap_up": true,
+      "gapfade1": null
+    },
+    {
+      "ticker": "CRWV",
+      "prev_close": 109.53,
+      "prev_high": 110.25,
+      "prev_low": 102.3,
+      "pm_price": 116.05,
+      "pm_chg_pct": 5.95,
+      "pm_vol": 1804921,
+      "pm_high": 116.1695,
+      "pm_low": 116.05,
+      "rel_vol": 0.4,
+      "market_cap_b": 49.8,
+      "pm_range_pct": 0.1,
+      "narrow_pm": true,
+      "levels": {
+        "PM_High": {
+          "price": 116.1695,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 116.05,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 110.25,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 102.3,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 109.53,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 116.017496,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 116.202004,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 116.143927,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 116.10974999999999,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 116.078202,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 88,
+      "gap_up": true,
+      "gapfade1": null
+    },
+    {
+      "ticker": "FIG",
+      "prev_close": 25.5,
+      "prev_high": 25.76,
+      "prev_low": 22.83,
+      "pm_price": 26.83,
+      "pm_chg_pct": 5.22,
+      "pm_vol": 1287889,
+      "pm_high": 26.97,
+      "pm_low": 26.83,
+      "rel_vol": 0.3,
+      "market_cap_b": 12.0,
+      "pm_range_pct": 0.52,
+      "narrow_pm": false,
+      "levels": {
+        "PM_High": {
+          "price": 26.97,
+          "type": "pm"
+        },
+        "PM_Low": {
+          "price": 26.83,
+          "type": "pm"
+        },
+        "PDH": {
+          "price": 25.76,
+          "type": "daily"
+        },
+        "PDL": {
+          "price": 22.83,
+          "type": "daily"
+        },
+        "PDC": {
+          "price": 25.5,
+          "type": "daily"
+        },
+        "Ext_-27.2": {
+          "price": 26.791919999999998,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Ext_127.2": {
+          "price": 27.00808,
+          "r": 0.88,
+          "n": 404,
+          "hit_1r": 51.5,
+          "tier": 1,
+          "rank": 1,
+          "type": "ext"
+        },
+        "Fib_78.6": {
+          "price": 26.94004,
+          "r": 0.81,
+          "n": 617,
+          "hit_1r": 53.5,
+          "tier": 1,
+          "rank": 2,
+          "type": "fib"
+        },
+        "Fib_50.0": {
+          "price": 26.9,
+          "r": 0.75,
+          "n": 770,
+          "hit_1r": 51.3,
+          "tier": 1,
+          "rank": 3,
+          "type": "fib"
+        },
+        "Fib_23.6": {
+          "price": 26.863039999999998,
+          "r": 0.69,
+          "n": 893,
+          "hit_1r": 54.2,
+          "tier": 1,
+          "rank": 4,
+          "type": "fib"
+        }
+      },
+      "range_position": 0.0,
+      "range_bias": "short",
+      "score": 86,
+      "gap_up": true,
+      "gapfade1": null
+    }
+  ],
+  "claims": [
+    {
+      "ticker": "MGM",
+      "pm_price": 48.81,
+      "scanner_score": 95,
+      "pm_change_pct": 11.77,
+      "expected_side": "long",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Long Continuation",
+      "trigger_price": 48.826,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "pm_price": 325.65,
+      "scanner_score": 95,
+      "pm_change_pct": 9.35,
+      "expected_side": "short",
+      "tradeability_grade": "A",
+      "tradeability_read": "GapFade Short",
+      "trigger_price": 325.5751,
+      "trigger_name": "Fib_78.6",
+      "entry_policy": "close_through",
+      "setup_type": "GapFade1",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "pm_price": 394.36,
+      "scanner_score": 95,
+      "pm_change_pct": 11.63,
+      "expected_side": "short",
+      "tradeability_grade": "A",
+      "tradeability_read": "GapFade Short",
+      "trigger_price": 394.0661,
+      "trigger_name": "Fib_78.6",
+      "entry_policy": "close_through",
+      "setup_type": "GapFade1",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "pm_price": 134.85,
+      "scanner_score": 95,
+      "pm_change_pct": 8.43,
+      "expected_side": "short",
+      "tradeability_grade": "A",
+      "tradeability_read": "GapFade Short",
+      "trigger_price": 134.9444,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "GapFade1",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "FLNC",
+      "pm_price": 22.86,
+      "scanner_score": 95,
+      "pm_change_pct": 21.08,
+      "expected_side": "long",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Long Continuation",
+      "trigger_price": 22.8836,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "pm_price": 22.75,
+      "scanner_score": 92,
+      "pm_change_pct": -7.41,
+      "expected_side": "short",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 22.7665,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "pm_price": 232.5875,
+      "scanner_score": 92,
+      "pm_change_pct": -7.34,
+      "expected_side": "short",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Short Continuation",
+      "trigger_price": 232.7627,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "pm_price": 247.08,
+      "scanner_score": 91,
+      "pm_change_pct": 6.92,
+      "expected_side": "long",
+      "tradeability_grade": "B+",
+      "tradeability_read": "Long Continuation",
+      "trigger_price": 247.0157,
+      "trigger_name": "Fib_78.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "pm_price": 116.05,
+      "scanner_score": 88,
+      "pm_change_pct": 5.95,
+      "expected_side": "long",
+      "tradeability_grade": "B",
+      "tradeability_read": "Long Continuation",
+      "trigger_price": 116.0782,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "narrow_pm",
+        "gamma_box"
+      ]
+    },
+    {
+      "ticker": "FIG",
+      "pm_price": 26.83,
+      "scanner_score": 86,
+      "pm_change_pct": 5.22,
+      "expected_side": "long",
+      "tradeability_grade": "A",
+      "tradeability_read": "Long Continuation",
+      "trigger_price": 26.863,
+      "trigger_name": "Fib_23.6",
+      "entry_policy": "close_through",
+      "setup_type": "S1/S2",
+      "warnings": [
+        "gamma_box"
+      ]
+    }
+  ],
+  "report_template": "premarket_v1_2_a_watchlist_avoid",
+  "direction_policy": "gapfade",
+  "trigger_policy": "fib",
+  "entry_policy": "close_through",
+  "gex_overlay": {
+    "MGM": {
+      "flip": 36.232521423930216,
+      "call_wall": 40.0,
+      "put_wall": 35.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "49.00-50.00",
+      "trigger": "Need clean acceptance above 50.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 49.00-50.00; wait for clearance above 50.00."
+    },
+    "IBM": {
+      "flip": 237.08002715521806,
+      "call_wall": 300.0,
+      "put_wall": 250.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "325.00-330.00",
+      "trigger": "Need clean acceptance above 340.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 325.00-330.00; wait for clearance above 340.00."
+    },
+    "ARM": {
+      "flip": 209.63918266035256,
+      "call_wall": 350.0,
+      "put_wall": 312.5,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "392.50-395.00",
+      "trigger": "Need clean acceptance above 412.50 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 392.50-395.00; wait for clearance above 412.50."
+    },
+    "NOW": {
+      "flip": 98.30110790236957,
+      "call_wall": 120.0,
+      "put_wall": 120.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "134.00-135.00",
+      "trigger": "Need clean acceptance above 142.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 134.00-135.00; wait for clearance above 142.00."
+    },
+    "FLNC": {
+      "flip": 18.125677231501136,
+      "call_wall": 25.0,
+      "put_wall": 18.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "22.00-23.00",
+      "trigger": "Need clean acceptance above 24.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 22.00-23.00; wait for clearance above 24.00."
+    },
+    "RDW": {
+      "flip": 12.562297163615035,
+      "call_wall": 25.0,
+      "put_wall": 20.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "22.50-23.00",
+      "trigger": "Need clean acceptance above 24.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 22.50-23.00; wait for clearance above 24.00."
+    },
+    "QCOM": {
+      "flip": 181.0469336767131,
+      "call_wall": 250.0,
+      "put_wall": 200.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "232.50-235.00",
+      "trigger": "Need clean acceptance above 245.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 232.50-235.00; wait for clearance above 245.00."
+    },
+    "NBIS": {
+      "flip": 211.7024218733618,
+      "call_wall": 200.0,
+      "put_wall": 210.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "247.50-250.00",
+      "trigger": "Need clean acceptance above 262.50 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 247.50-250.00; wait for clearance above 262.50."
+    },
+    "CRWV": {
+      "flip": 101.27953724967237,
+      "call_wall": 120.0,
+      "put_wall": 100.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "115.00-116.00",
+      "trigger": "Need clean acceptance above 121.00 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 115.00-116.00; wait for clearance above 121.00."
+    },
+    "FIG": {
+      "flip": 20.81829057369137,
+      "call_wall": 25.0,
+      "put_wall": 25.0,
+      "state_label": "comfortably_above_flip",
+      "bias": "mean_reversion",
+      "index_regime_summary": "Index flip bias mixed (SPY above flip, QQQ above flip, SMH below flip, IWM below flip).",
+      "gamma_box": "26.50-27.00",
+      "trigger": "Need clean acceptance above 28.50 to escape the gamma box.",
+      "decision_summary": "High pin risk inside 26.50-27.00; wait for clearance above 28.50."
+    }
+  },
+  "evidence": {
+    "scanner_exit_code": 0,
+    "scanner_ok": true,
+    "stdout_bytes": 34451,
+    "stderr_bytes": 0
+  }
+}
